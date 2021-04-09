@@ -15,7 +15,7 @@ class HomeMenu extends React.Component {
     renderMenuItems = () => {
         return menuList.map(({ title, key }) => (
             <Menu.Item key={key}>
-                <Link to={'key'}>{title}</Link>
+                <Link to={key}>{title}</Link>
             </Menu.Item>
         ));
     };

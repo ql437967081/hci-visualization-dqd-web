@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import MainLayout from './component/MainLayout';
 import UserMap from './component/user-map/UserMap';
+import CommentsHeatWords from './component/comments-heat-words/CommentsHeatWords';
 
 function App() {
     return (
@@ -13,6 +14,9 @@ function App() {
                 <Switch>
                     <Route path={'/user-map'}>
                         <UserMap />
+                    </Route>
+                    <Route path={'/comments-heat-words'}>
+                        <CommentsHeatWords />
                     </Route>
                     <Redirect to={'/user-map'} />
                 </Switch>

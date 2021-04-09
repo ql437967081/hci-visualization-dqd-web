@@ -73,9 +73,9 @@ export default function UserMap() {
             left: 'left',
             top: 'top',
             feature: {
-                dataView: {readOnly: false},
-                restore: {},
-                saveAsImage: {}
+                dataView: {readOnly: false, title: '数据'},
+                restore: {title: '重置'},
+                saveAsImage: {title: '保存'}
             }
         },
         series: [
