@@ -5,6 +5,7 @@ import ReactEcharts from 'echarts-for-react';
 import 'echarts-wordcloud';
 import mockData from './mock-data';
 import TeamInput from '../team-input/TeamInput';
+import { getCommentsHeatWords } from '../../api/allApi';
 
 const allString = '所有';
 
@@ -13,8 +14,12 @@ export default function CommentsHeatWords() {
     const [team, setTeam] = useState(allString);
 
     const onSearch = team => {
-        if (!team) team = allString;
-        setTeam(team);
+        getCommentsHeatWords(team, data => {
+            if (!team) team = allString;
+            console.log(`搜索${team}球迷分布`);
+            setTeam(team);
+            setData(data);
+        });
         console.log(`搜索${team}球迷评论热词`);
     };
 

@@ -5,6 +5,7 @@ import * as echarts from 'echarts';
 import chinaJson from './china.json';
 import mockData from './mock-data';
 import TeamInput from '../team-input/TeamInput';
+import { getUserMap } from '../../api/allApi';
 
 const allString = '所有';
 
@@ -17,9 +18,12 @@ export default function UserMap() {
     const maxValue = Math.max(...values);
 
     const onSearch = team => {
-        if (!team) team = allString;
-        setTeam(team);
-        console.log(`搜索${team}球迷分布`);
+        getUserMap(team, data => {
+            if (!team) team = allString;
+            console.log(`搜索${team}球迷分布`);
+            setTeam(team);
+            setData(data);
+        });
     };
 
     echarts.registerMap('china', chinaJson);
