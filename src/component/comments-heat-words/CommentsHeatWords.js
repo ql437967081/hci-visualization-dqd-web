@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Space } from 'antd';
 import ReactEcharts from 'echarts-for-react';
 //import * as echarts from 'echarts';
 import 'echarts-wordcloud';
@@ -112,9 +113,9 @@ export default function CommentsHeatWords() {
         }]
     };
     return (
-        <>
+        <Space direction={'vertical'} style={{ width: '100%', paddingTop: '2%' }}>
             <TeamInput onSearchTeam={onSearch} />
-            <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '100vh' }} />
-        </>
+            <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '80vh' }} />
+        </Space>
     );
 }

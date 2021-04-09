@@ -28,7 +28,7 @@ export default function TeamInput({ onSearchTeam }) {
             }}
             onSelect={onSelect}
             onSearch={onSearch}
-            placeholder="请输入球队名称"
+            placeholder="输入球队名称查询"
         />
     );
 }
