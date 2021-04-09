@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactEcharts from 'echarts-for-react';
 //import * as echarts from 'echarts';
 import 'echarts-wordcloud';
+import mockData from './mock-data';
+import TeamInput from '../team-input/TeamInput';
+
+const allString = '所有';
 
 export default function CommentsHeatWords() {
-    const data = [
-        {name: "龙头镇", value: "111"},
-        {name: "大埔镇", value: "222"},
-        {name: "太平镇", value: "458"},
-        {name: "沙埔镇", value: "445"},
-        {name: "东泉镇", value: "456"},
-        {name: "凤山镇", value: "647"},
-        {name: "六塘镇", value: "189"},
-        {name: "冲脉镇", value: "864"},
-        {name: "寨隆镇", value: "652"},
-    ];
+    const [data, setData] = useState(mockData);
+    const [team, setTeam] = useState(allString);
+
+    const onSearch = team => {
+        if (!team) team = allString;
+        setTeam(team);
+        console.log(`搜索${team}球迷评论热词`);
+    };
+
     const option = {
         title: {
-            text: '评论热词',
+            text: `${team}球迷评论热词`,
             left: 'right'
         },
         tooltip: {
@@ -110,6 +112,9 @@ export default function CommentsHeatWords() {
         }]
     };
     return (
-        <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '100vh' }} />
+        <>
+            <TeamInput onSearchTeam={onSearch} />
+            <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '100vh' }} />
+        </>
     );
 }

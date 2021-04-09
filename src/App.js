@@ -4,21 +4,19 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import { HashRouter, Redirect, Route, Switch } from "react-router-dom";
 import MainLayout from './component/MainLayout';
-import UserMap from './component/user-map/UserMap';
-import CommentsHeatWords from './component/comments-heat-words/CommentsHeatWords';
+import menuList from './menu/menuList';
 
 function App() {
     return (
         <HashRouter>
             <MainLayout>
                 <Switch>
-                    <Route path={'/user-map'}>
-                        <UserMap />
-                    </Route>
-                    <Route path={'/comments-heat-words'}>
-                        <CommentsHeatWords />
-                    </Route>
-                    <Redirect to={'/user-map'} />
+                    {menuList.map(({ key, component }) => (
+                        <Route path={key} key={'key'}>
+                            {component}
+                        </Route>
+                    ))}
+                    <Redirect to={menuList[0].key} />
                 </Switch>
             </MainLayout>
         </HashRouter>
