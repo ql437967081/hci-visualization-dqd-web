@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from 'antd/lib/index';
+import { Layout, Space } from 'antd/lib/index';
 import HomeMenu from '../menu/HomeMenu';
 
 const { Header, Content, Footer } = Layout;
@@ -8,8 +8,10 @@ export default function MainLayout ({ children }) {
     return (
         <Layout  style={{ minHeight: '100vh' }}>
             <Header>
-                <div className="logo" />
-                <HomeMenu />
+                <Space align={'center'} size={'large'}>
+                    <img src={'logo.png'} alt={''} width={30} height={30} />
+                    <HomeMenu />
+                </Space>
             </Header>
             <Content style={{ padding: '0 50px' }}>
                 {children}
