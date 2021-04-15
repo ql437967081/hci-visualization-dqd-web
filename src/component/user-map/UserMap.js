@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Space, Spin} from 'antd';
+import { Space, Spin } from 'antd';
 import ReactEcharts from 'echarts-for-react';
 import * as echarts from 'echarts';
 import chinaJson from './china.json';

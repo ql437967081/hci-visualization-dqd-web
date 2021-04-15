@@ -1,7 +1,8 @@
 import { axios, handleFailure, handleResponse, backendModeConfig } from './util/default';
-import { teamUrl, userMapUrl, commentsHeatWordsUrl } from './util/url';
+import { teamUrl, userMapUrl, commentsHeatWordsUrl, commentsTimeUrl } from './util/url';
 import mockUserMap from '../component/user-map/mock-data';
 import mockCommentsHeatWords from '../component/comments-heat-words/mock-data';
+import area from '../component/area-comments-time/area';
 
 const searchTeam = (searchText, handleSuccess) => {
     if (!backendModeConfig) {
@@ -53,8 +54,50 @@ const getCommentsHeatWords = (team, handleSuccess) => {
         });
 };
 
+const getCommentsTime = (team, handleSuccess) => {
+    if (!backendModeConfig) {
+        const mockTimeNum = [];
+        for (let i = 0; i < 24; i++) mockTimeNum.push(Math.round(Math.random() * 1000));
+        setTimeout(function () {
+            handleSuccess(mockTimeNum);
+        }, 300);
+        return;
+    }
+    axios.get(commentsTimeUrl, { params: { team, area: false } })
+        .then(function (response) {
+            handleResponse(response, handleSuccess);
+        })
+        .catch(function (error) {
+            handleFailure(error);
+        });
+};
+
+const getAreaCommentsTime = (handleSuccess) => {
+    if (!backendModeConfig) {
+        const mockAreaTimeNum = {};
+        area.forEach(p => {
+            const mockTimeNum = [];
+            for (let i = 0; i < 24; i++) mockTimeNum.push(Math.round(Math.random() * 1000));
+            mockAreaTimeNum[p] = mockTimeNum;
+        });
+        setTimeout(function () {
+            handleSuccess(mockAreaTimeNum);
+        }, 300);
+        return;
+    }
+    axios.get(commentsTimeUrl, { params: { area: true } })
+        .then(function (response) {
+            handleResponse(response, handleSuccess);
+        })
+        .catch(function (error) {
+            handleFailure(error);
+        });
+};
+
 export {
     searchTeam,
     getUserMap,
-    getCommentsHeatWords
+    getCommentsHeatWords,
+    getCommentsTime,
+    getAreaCommentsTime
 };
