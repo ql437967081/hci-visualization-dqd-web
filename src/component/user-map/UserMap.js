@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Space } from 'antd';
+import {Space, Spin} from 'antd';
 import ReactEcharts from 'echarts-for-react';
 import * as echarts from 'echarts';
 import chinaJson from './china.json';
@@ -12,17 +12,20 @@ const allString = '所有';
 export default function UserMap() {
     const [data, setData] = useState(mockData);
     const [team, setTeam] = useState(allString);
+    const [loading, setLoading] = useState(false);
 
     const values = data.map(({ value }) => value);
     const minValue = Math.min(...values);
     const maxValue = Math.max(...values);
 
     const onSearch = team => {
+        setLoading(true);
         getUserMap(team, data => {
             if (!team) team = allString;
             console.log(`搜索${team}球迷分布`);
             setTeam(team);
             setData(data);
+            setLoading(false);
         });
     };
 
@@ -81,7 +84,9 @@ export default function UserMap() {
     return (
         <Space direction={'vertical'} style={{ width: '100%', paddingTop: '2%' }}>
             <TeamInput onSearchTeam={onSearch} />
-            <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '80vh' }} />
+            <Spin spinning={loading}>
+                <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '80vh' }} />
+            </Spin>
         </Space>
     );
 }
