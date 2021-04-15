@@ -12,7 +12,7 @@ const searchTeam = (searchText, handleSuccess) => {
         }, 250);
         return;
     }
-    axios.get(teamUrl, { params: { search_text: searchText } })
+    axios.get(teamUrl, { params: { searchText } })
         .then(function (response) {
             handleResponse(response, handleSuccess);
         })
@@ -22,7 +22,7 @@ const searchTeam = (searchText, handleSuccess) => {
 };
 
 const getUserMap = (team, handleSuccess) => {
-    if (!backendModeConfig) {
+    if (!backendModeConfig || !team) {
         setTimeout(function () {
             handleSuccess(mockUserMap);
         }, 300);
@@ -38,7 +38,7 @@ const getUserMap = (team, handleSuccess) => {
 };
 
 const getCommentsHeatWords = (team, handleSuccess) => {
-    if (!backendModeConfig) {
+    if (!backendModeConfig || !team) {
         setTimeout(function () {
             handleSuccess(mockCommentsHeatWords);
         }, 300);

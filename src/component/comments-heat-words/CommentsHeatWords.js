@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Space } from 'antd';
+import { Space, Spin } from 'antd';
 import ReactEcharts from 'echarts-for-react';
 //import * as echarts from 'echarts';
 import 'echarts-wordcloud';
@@ -12,13 +12,16 @@ const allString = '所有';
 export default function CommentsHeatWords() {
     const [data, setData] = useState(mockData);
     const [team, setTeam] = useState(allString);
+    const [loading, setLoading] = useState(false);
 
     const onSearch = team => {
+        setLoading(true);
         getCommentsHeatWords(team, data => {
             if (!team) team = allString;
             console.log(`搜索${team}球迷分布`);
             setTeam(team);
             setData(data);
+            setLoading(false);
         });
         console.log(`搜索${team}球迷评论热词`);
     };
@@ -120,7 +123,9 @@ export default function CommentsHeatWords() {
     return (
         <Space direction={'vertical'} style={{ width: '100%', paddingTop: '2%' }}>
             <TeamInput onSearchTeam={onSearch} />
-            <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '80vh' }} />
+            <Spin spinning={loading}>
+                <ReactEcharts option={option} notMerge={true} lazyUpdate={true} style={{ height: '80vh' }} />
+            </Spin>
         </Space>
     );
 }
