@@ -2,6 +2,7 @@ import React from 'react';
 import UserMap from '../component/user-map/UserMap';
 import CommentsHeatWords from '../component/comments-heat-words/CommentsHeatWords';
 import CommentsTime from '../component/comments-time/CommentsTime';
+import UserRelation from "../component/user-relation/UserRelation";
 import AreaCommentsTime from '../component/area-comments-time/AreaCommentsTime';
 
 const menuList = [
@@ -24,6 +25,11 @@ const menuList = [
         title: '地域评论时间分布',
         key: '/area-comments-time',
         component: <AreaCommentsTime />
+    },
+    {
+        title: '用户关系图',
+        key: '/user-relation',
+        component: <UserRelation />
     }
 ];
 

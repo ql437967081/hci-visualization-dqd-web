@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+ <graph mode="static" defaultedgetype="directed">
+ <nodes>
+ <node id="10696274" label="(库尔迪拉,male)" />
+ <node id="1965994" label="(维科巴,male)" />
+ <node id="6868416" label="(专业女分析师,female)" />
+ <node id="1743420" label="(凹凸节奏,None)" />
+ <node id="2534444" label="(la1118,male)" />
+ <node id="12539184" label="(愿你安好jh,female)" />
+ <node id="348044" label="(interjc,male)" />
+ <node id="2930572" label="(冥界之花埃列什基伽勒,female)" />
+ <node id="2524196" label="(inter况大神,female)" />
+ <node id="342698" label="(蓝黑之翼,secret)" />
+ <node id="373952" label="(虎魄-恒,male)" />
+ <node id="4563936" label="(大琦7,None)" />
+ <node id="2956462" label="(莫妮卡-贝鲁奇,secret)" />
+ <node id="1944404" label="(记得归来,male)" />
+ <node id="1400930" label="(赵健Robin,male)" />
+ <node id="10786154" label="(单车少年ROBINHO7,male)" />
+ <node id="1159964" label="(国安沈哥,male)" />
+ <node id="11891246" label="(国米未来名宿阿什拉夫,None)" />
+ <node id="1973946" label="(雷***玛,None)" />
+ <node id="6324742" label="(低调小马哥,None)" />
+ <node id="3110640" label="(sparite1984a,None)" />
+ <node id="950800" label="(-我是萌锤子啊,female)" />
+ <node id="4030118" label="(interm17,male)" />
+ <node id="1265652" label="(国米首席战术高中锋,male)" />
+ <node id="1358292" label="(蓝黑骑士,male)" />
+ <node id="1441304" label="(蓝色血液黑色心,male)" />
+ <node id="1442424" label="(一品黄山,female)" />
+ <node id="977610" label="(yangkejuan,male)" />
+ <node id="1453964" label="(PLF2008,male)" />
+ <node id="1268580" label="(千鹤封,male)" />
+ <node id="2697347" label="(Gladiator01,male)" />
+ <node id="1374711" label="(liuxiaoyu189...,male)" />
+ <node id="10267757" label="(穆帅6hh,None)" />
+ <node id="649049" label="(卡贝萨斯,male)" />
+ <node id="2628591" label="(枪手国米,male)" />
+ <node id="1101923" label="(南霁雲,male)" />
+ <node id="679673" label="(Reus518,male)" />
+ <node id="1262019" label="(BloodShadow,male)" />
+ <node id="95983" label="(蓝熊黑猫,male)" />
+ <node id="7710425" label="(Ronaldo0918,male)" />
+ <node id="3624101" label="(国米的0度角,male)" />
+ <node id="10141985" label="(黯淡的烛光,male)" />
+ <node id="3654101" label="(蓝黑色的信仰,male)" />
+ <node id="1285847" label="(安菲尔德扛把子,male)" />
+ <node id="1815025" label="(曼联新主教练穆里尼奥,male)" />
+ <node id="2925529" label="(东巴拉腔,male)" />
+ <node id="950585" label="(HM青年,male)" />
+ <node id="2701389" label="(hb2026,None)" />
+ <node id="722159" label="(光翟李,None)" />
+ <node id="1355785" label="(给力麽麽兎,None)" />
+ <node id="1806509" label="(cjf570,male)" />
+ <node id="3018941" label="(不愿透露姓名的JR,male)" />
+ <node id="2127785" label="(维维亚利,male)" />
+ <node id="2520107" label="(蓝黑资深菜鸟,None)" />
+ <node id="1916483" label="(ChennySun,female)" />
+ <node id="1064143" label="(伪江城子,male)" />
+ <node id="1502585" label="(蓝色加冰,male)" />
+ <node id="2702165" label="(小国际更衣室保洁,None)" />
+ <node id="8410869" label="(伊卡尔迪之妻旺达,None)" />
+ <node id="10957233" label="(十里烟火,male)" />
+ <node id="13184421" label="(穆索,secret)" />
+ <node id="13115453" label="(球迷qpnn9fff,None)" />
+ <node id="12728807" label="(未来队长10克,None)" />
+ <node id="1513725" label="(内拉祖里1998,male)" />
+ <node id="5532209" label="(milktea1988,female)" />
+ <node id="2122447" label="(zhangdecai16425,male)" />
+ <node id="120571" label="(国米经理,male)" />
+ <node id="1434859" label="(国米小美,female)" />
+ <node id="1460179" label="(番茄骑士,male)" />
+ <node id="6680513" label="(薇***5,female)" />
+ <node id="1441359" label="(王瑞恒Villa,male)" />
+ <node id="2915283" label="(米兰心zjl,male)" />
+ </nodes>
+ <edges>
+ <edge source="95983" target="6324742" label="follow" />
+ <edge source="120571" target="977610" label="follow" />
+ <edge source="120571" target="2697347" label="follow" />
+ <edge source="120571" target="10696274" label="follow" />
+ <edge source="120571" target="10786154" label="follow" />
+ <edge source="342698" target="1355785" label="follow" />
+ <edge source="342698" target="4030118" label="follow" />
+ <edge source="342698" target="4030118" label="follow" />
+ <edge source="348044" target="2127785" label="follow" />
+ <edge source="373952" target="2534444" label="follow" />
+ <edge source="373952" target="2534444" label="follow" />
+ <edge source="649049" target="1453964" label="follow" />
+ <edge source="679673" target="2122447" label="follow" />
+ <edge source="722159" target="950585" label="follow" />
+ <edge source="722159" target="1965994" label="follow" />
+ <edge source="950585" target="722159" label="follow" />
+ <edge source="950585" target="1453964" label="follow" />
+ <edge source="950800" target="1262019" label="follow" />
+ <edge source="977610" target="1159964" label="follow" />
+ <edge source="977610" target="1268580" label="follow" />
+ <edge source="977610" target="1374711" label="follow" />
+ <edge source="977610" target="2524196" label="follow" />
+ <edge source="977610" target="2915283" label="follow" />
+ <edge source="977610" target="2930572" label="follow" />
+ <edge source="977610" target="3110640" label="follow" />
+ <edge source="977610" target="7710425" label="follow" />
+ <edge source="977610" target="10267757" label="follow" />
+ <edge source="977610" target="10957233" label="follow" />
+ <edge source="977610" target="11891246" label="follow" />
+ <edge source="977610" target="12728807" label="follow" />
+ <edge source="977610" target="13115453" label="follow" />
+ <edge source="1064143" target="10696274" label="follow" />
+ <edge source="1101923" target="342698" label="follow" />
+ <edge source="1101923" target="342698" label="follow" />
+ <edge source="1101923" target="1262019" label="follow" />
+ <edge source="1101923" target="1358292" label="follow" />
+ <edge source="1101923" target="2697347" label="follow" />
+ <edge source="1101923" target="6324742" label="follow" />
+ <edge source="1101923" target="10696274" label="follow" />
+ <edge source="1101923" target="10786154" label="follow" />
+ <edge source="1159964" target="977610" label="follow" />
+ <edge source="1262019" target="950800" label="follow" />
+ <edge source="1262019" target="1101923" label="follow" />
+ <edge source="1262019" target="1442424" label="follow" />
+ <edge source="1262019" target="1460179" label="follow" />
+ <edge source="1262019" target="1973946" label="follow" />
+ <edge source="1262019" target="2520107" label="follow" />
+ <edge source="1262019" target="2701389" label="follow" />
+ <edge source="1262019" target="2956462" label="follow" />
+ <edge source="1262019" target="3624101" label="follow" />
+ <edge source="1262019" target="5532209" label="follow" />
+ <edge source="1262019" target="6680513" label="follow" />
+ <edge source="1262019" target="8410869" label="follow" />
+ <edge source="1262019" target="12539184" label="follow" />
+ <edge source="1265652" target="2122447" label="follow" />
+ <edge source="1268580" target="977610" label="follow" />
+ <edge source="1285847" target="1453964" label="follow" />
+ <edge source="1355785" target="342698" label="follow" />
+ <edge source="1355785" target="1815025" label="follow" />
+ <edge source="1355785" target="1965994" label="follow" />
+ <edge source="1355785" target="6868416" label="follow" />
+ <edge source="1358292" target="1101923" label="follow" />
+ <edge source="1358292" target="2925529" label="follow" />
+ <edge source="1374711" target="977610" label="follow" />
+ <edge source="1400930" target="2534444" label="follow" />
+ <edge source="1400930" target="2534444" label="follow" />
+ <edge source="1434859" target="1453964" label="follow" />
+ <edge source="1441304" target="1965994" label="follow" />
+ <edge source="1441359" target="1453964" label="follow" />
+ <edge source="1442424" target="1262019" label="follow" />
+ <edge source="1453964" target="649049" label="follow" />
+ <edge source="1453964" target="950585" label="follow" />
+ <edge source="1453964" target="1285847" label="follow" />
+ <edge source="1453964" target="1434859" label="follow" />
+ <edge source="1453964" target="1441359" label="follow" />
+ <edge source="1453964" target="1743420" label="follow" />
+ <edge source="1453964" target="1916483" label="follow" />
+ <edge source="1453964" target="1973946" label="follow" />
+ <edge source="1460179" target="1262019" label="follow" />
+ <edge source="1502585" target="2122447" label="follow" />
+ <edge source="1513725" target="1965994" label="follow" />
+ <edge source="1743420" target="1453964" label="follow" />
+ <edge source="1743420" target="2534444" label="follow" />
+ <edge source="1743420" target="2534444" label="follow" />
+ <edge source="1806509" target="2697347" label="follow" />
+ <edge source="1806509" target="10786154" label="follow" />
+ <edge source="1815025" target="1355785" label="follow" />
+ <edge source="1916483" target="1453964" label="follow" />
+ <edge source="1944404" target="2122447" label="follow" />
+ <edge source="1965994" target="722159" label="follow" />
+ <edge source="1965994" target="1355785" label="follow" />
+ <edge source="1965994" target="1441304" label="follow" />
+ <edge source="1965994" target="1513725" label="follow" />
+ <edge source="1965994" target="2122447" label="follow" />
+ <edge source="1965994" target="2127785" label="follow" />
+ <edge source="1965994" target="2702165" label="follow" />
+ <edge source="1973946" target="1262019" label="follow" />
+ <edge source="1973946" target="1355785" label="follow" />
+ <edge source="1973946" target="1453964" label="follow" />
+ <edge source="2122447" target="679673" label="follow" />
+ <edge source="2122447" target="1265652" label="follow" />
+ <edge source="2122447" target="1502585" label="follow" />
+ <edge source="2122447" target="1944404" label="follow" />
+ <edge source="2122447" target="1965994" label="follow" />
+ <edge source="2122447" target="3654101" label="follow" />
+ <edge source="2122447" target="4563936" label="follow" />
+ <edge source="2127785" target="348044" label="follow" />
+ <edge source="2127785" target="1965994" label="follow" />
+ <edge source="2520107" target="1262019" label="follow" />
+ <edge source="2524196" target="977610" label="follow" />
+ <edge source="2534444" target="373952" label="follow" />
+ <edge source="2534444" target="373952" label="follow" />
+ <edge source="2534444" target="1400930" label="follow" />
+ <edge source="2534444" target="1400930" label="follow" />
+ <edge source="2534444" target="1743420" label="follow" />
+ <edge source="2534444" target="1743420" label="follow" />
+ <edge source="2534444" target="1965994" label="follow" />
+ <edge source="2534444" target="1965994" label="follow" />
+ <edge source="2534444" target="2628591" label="follow" />
+ <edge source="2534444" target="2628591" label="follow" />
+ <edge source="2628591" target="2534444" label="follow" />
+ <edge source="2628591" target="2534444" label="follow" />
+ <edge source="2697347" target="1101923" label="follow" />
+ <edge source="2697347" target="1806509" label="follow" />
+ <edge source="2697347" target="1965994" label="follow" />
+ <edge source="2701389" target="1262019" label="follow" />
+ <edge source="2702165" target="1965994" label="follow" />
+ <edge source="2915283" target="977610" label="follow" />
+ <edge source="2925529" target="2697347" label="follow" />
+ <edge source="2930572" target="977610" label="follow" />
+ <edge source="2956462" target="1262019" label="follow" />
+ <edge source="2956462" target="2697347" label="follow" />
+ <edge source="3018941" target="10786154" label="follow" />
+ <edge source="3110640" target="977610" label="follow" />
+ <edge source="3624101" target="1262019" label="follow" />
+ <edge source="3654101" target="2122447" label="follow" />
+ <edge source="4030118" target="342698" label="follow" />
+ <edge source="4030118" target="342698" label="follow" />
+ <edge source="4563936" target="2122447" label="follow" />
+ <edge source="5532209" target="1262019" label="follow" />
+ <edge source="6324742" target="95983" label="follow" />
+ <edge source="6324742" target="1101923" label="follow" />
+ <edge source="6324742" target="1965994" label="follow" />
+ <edge source="6680513" target="1262019" label="follow" />
+ <edge source="6680513" target="2697347" label="follow" />
+ <edge source="6868416" target="1355785" label="follow" />
+ <edge source="7710425" target="977610" label="follow" />
+ <edge source="8410869" target="1262019" label="follow" />
+ <edge source="10141985" target="10696274" label="follow" />
+ <edge source="10267757" target="977610" label="follow" />
+ <edge source="10696274" target="120571" label="follow" />
+ <edge source="10696274" target="1064143" label="follow" />
+ <edge source="10696274" target="1358292" label="follow" />
+ <edge source="10696274" target="1358292" label="follow" />
+ <edge source="10696274" target="10141985" label="follow" />
+ <edge source="10696274" target="10957233" label="follow" />
+ <edge source="10696274" target="13184421" label="follow" />
+ <edge source="10786154" target="120571" label="follow" />
+ <edge source="10786154" target="1101923" label="follow" />
+ <edge source="10786154" target="1806509" label="follow" />
+ <edge source="10786154" target="3018941" label="follow" />
+ <edge source="10957233" target="10696274" label="follow" />
+ <edge source="11891246" target="977610" label="follow" />
+ <edge source="12539184" target="1262019" label="follow" />
+ <edge source="12728807" target="977610" label="follow" />
+ <edge source="13115453" target="977610" label="follow" />
+ <edge source="13184421" target="10696274" label="follow" />
+ </edges>
+ </graph>
+</gexf>
